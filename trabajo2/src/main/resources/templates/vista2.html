@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Petición 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            padding: 40px;
+            text-align: center;
+        }
+        h1 { color: #d45f00; font-size: 2.5em; }
+
+    </style>
+</head>
+<body>
+<h1>Estadísticas de Animales por Refugio</h1>
+<p>Conteo de refugios: <strong th:text="${conteo}"></strong></p>
+<p>Total de animales: <strong th:text="${sumatotal}"></strong></p>
+<p>Promedio de animales por refugio: <strong th:text="${promedio}"></strong></p>
+<p>Mínimo de animales en un refugio: <strong th:text="${min}"></strong></p>
+<p>Máximo de animales en un refugio: <strong th:text="${max}"></strong></p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Petición 5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            padding: 40px;
+            text-align: center;
+        }
+        h1 { color: #d45f00; font-size: 2.5em; }
+
+    </style>
+</head>
+<body>
+<h1> Animal más viejo de todos los refugios</h1>
+<div th:if="${animalMasViejo != null}">
+    <p>Nombre: <strong th:text="${animalMasViejo.nombre}"></strong></p>
+    <p>Especie: <strong th:text="${animalMasViejo.especie}"></strong></p>
+    <p>Edad: <strong th:text="${animalMasViejo.edad}"></strong>años</p>
+    <p>Raza: <strong th:text="${animalMasViejo.raza}"></strong></p>
+</div>
+</body>
+</html>

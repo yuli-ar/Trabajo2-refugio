@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Peticion 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            padding: 40px;
+            text-align: center;
+        }
+        h1 { color: #d45f00; font-size: 2.5em; }
+        p { color: #666; font-size: 1.1em; }
+        strong { color: #d45f00; }
+    </style>
+</head>
+<body>
+<h1> Refugios de Animales</h1>
+<h2>Nombres de todos los refugios:</h2>
+<p th:text="${salida}"></p>
+</body>
+</html>

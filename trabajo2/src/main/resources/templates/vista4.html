@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Consultas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            padding: 40px;
+            text-align: center;
+        }
+        h1 { color: #d45f00; font-size: 2.5em; }
+        p { color: ; font-size: 1.1em; }
+        strong { color:  }
+    </style>
+</head>
+<body>
+<h1> Consultas</h1>
+<p>¿Hay refugios sin animales? <strong th:text="${sinAnimales} ? 'Si' : 'No'"></strong>
+</p>
+<p>¿Hay refugios con más de un animal? <strong th:text="${masDeUno} ? 'Si' : 'No'"></strong>
+</p>
+<p>¿Ningún refugio tiene más de tres animales? <strong th:text="${ningunoMasDeTres} ? 'Si' : 'No'"></strong>
+</p>
+</body>
+</html>

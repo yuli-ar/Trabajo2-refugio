@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Refugio de Animales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff8f0;
+            padding: 40px;
+        }
+        h1 {
+            color: #d45f00;
+            font-size: 2.5em;
+        }
+        p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        .botones {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        a {
+            display: block;
+            width: 350px;
+            padding: 15px;
+            background-color: #d45f00;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #a84800;
+        }
+    </style>
+</head>
+<body>
+<div style="margin: 20px auto; max-width: 500px; background-color: #ffe8d6; border-radius: 15px; padding: 20px;">
+    <p style="color: #d45f00; font-style: italic; font-size: 1em;">
+        "Este proyecto está inspirado en mi historia personal. Mi gato Tommy,
+        mi mejor amigo desde que tengo 17 años, también es rescatado de un refugio.
+        Para mí él es un gato único, para un amor único." 🐾❤️</p>
+</div>
+<h1>🐾 Refugio de Animales 🐾</h1>
+<p>Bienvenid@, aquí puedes consultar información sobre nuestros refugios y animales</p>
+
+<div class="botones">
+    <a href="/peticion1"> Ver nombres de todos los refugios</a>
+    <a href="/peticion2"> Ver estadísticas de animales</a>
+    <a href="/peticion3"> Ver todos los animales</a>
+    <a href="/peticion4"> Ver consultas </a>
+    <a href="/peticion5"> Ver animal más viejo</a>
+
+    </p>
+</div>
+</body>
+</html>
